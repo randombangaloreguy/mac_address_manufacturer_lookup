@@ -6,6 +6,7 @@ A C program to identify the manufacturer of a device based on its MAC address us
 - Parses manufacturer data from Wireshark's manuf file.
 - Supports 24, 28, and 36-bit MAC address prefixes.
 - Provides a simple command-line interface to lookup manufacturers by MAC address.
+- find_manufacturer() function can be integrated to existing C source code without much efforts to lookup the manufacturer offline.
 
 ## Usage
 
