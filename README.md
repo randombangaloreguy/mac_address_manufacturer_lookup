@@ -21,8 +21,12 @@ A C program to identify the manufacturer of a device based on its MAC address us
    ```sh
    gcc -o find_manuf find_manufacturer.c
 
-4. ** Run:**
+4. **Run:**
    ```sh
    $ ./find_manuf
    Enter MAC address: FC:FB:FB
    Manufacturer:       	Cisco Systems, Inc
+
+
+*TODO*
+   Provide a way to search the manufacturer from a complete mac address instead of from OUI part of it.
