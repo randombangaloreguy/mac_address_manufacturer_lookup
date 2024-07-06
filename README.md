@@ -15,18 +15,32 @@ A C program to identify the manufacturer of a device based on its MAC address us
    git clone https://github.com/yourusername/wireshark-mac-lookup.git
    cd wireshark-mac-lookup
 2. **Download the manuf file:**
-   Download the manuf file from https://www.wireshark.org/download/automated/data/manuf and save it as manuf.txt in the repository directory.
+   Download the manuf file from https://www.wireshark.org/download/automated/data/manuf and save it as manuf.txt in the data directory.
 
 3. **Compile the program:**
    ```sh
-   gcc -o find_manuf find_manufacturer.c
+   make
 
 4. **Run:**
    ```sh
-   $ ./find_manuf
-   Enter MAC address: FC:FB:FB
-   Manufacturer:       	Cisco Systems, Inc
+   $ tree
+   .
+   ├── Makefile
+   ├── README.txt
+   ├── bin
+   │   └── find_manuf
+   ├── data
+   │   └── manuf.txt
+   ├── find_manufacturer.c
+   ├── include
+   │   └── manuf_lookup.h
+   ├── obj
+   │   ├── main.o
+   │   └── manuf_lookup.o
+   └── src
+    ├── main.c
+    └── manuf_lookup.c
 
-
-*TODO*
-   Provide a way to search the manufacturer from a complete mac address instead of from OUI part of it.
+   $ ./bin/find_manuf 
+   Enter MAC address: FC:FB:FB:01:BE:01
+   Manufacturer: Cisco Systems, Inc
