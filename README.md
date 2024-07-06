@@ -1,4 +1,4 @@
-# Wireshark MAC Address Manufacturer Lookup
+# MAC Address Manufacturer Lookup
 
 A C program to identify the manufacturer of a device based on its MAC address using Wireshark's OUI database. This program parses the manufacturer data from the Wireshark manuf file , available at https://www.wireshark.org/download/automated/data/manuf, and allows users to lookup the manufacturer by entering a MAC address. It supports 24, 28, and 36-bit MAC address prefixes.
 
